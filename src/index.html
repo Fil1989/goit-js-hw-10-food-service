@@ -9,7 +9,12 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="./styles.css" /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
   </head>
   <body class="light-theme">
     <div class="toolbar">
@@ -44,6 +49,30 @@
 
     <!-- В этот список рендери разметку меню -->
     <ul class="menu js-menu"></ul>
-    
+    <form class="form-search">
+      <input type="text" name="search" class="search" />
+      <button type="submit" name="btn" class="btnn">submit</button>
+    </form>
+    <ul class="articles js-example"></ul>
+    <!-- <div class="spinner">
+      <div class="spinner-circle spinner-circle-outer"></div>
+      <div class="spinner-circle-off spinner-circle-inner"></div>
+      <div class="spinner-circle spinner-circle-single-1"></div>
+      <div class="spinner-circle spinner-circle-single-2"></div>
+      <div class="text">...working...</div>
+    </div> -->
+    <!-- <button type="button" class="btn-load">load more...</button> -->
+
+    <button
+      class="btn btn-primary button is-hidden"
+      type="button"
+      data-action="load-more"
+    >
+      <span
+        class="spinner-border spinner-border-sm spinner is-hidden"
+        role="status"
+      ></span>
+      <span class="label">Показати більше</span>
+    </button>
   </body>
 </html>
